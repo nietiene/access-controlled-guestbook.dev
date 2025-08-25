@@ -9,6 +9,7 @@ contract myCounter {
      }
 
      function decrement () public {
+        // use require methood for condition
         require(count > 0, "Count cannot be negative");
         count -= 1;
      }
