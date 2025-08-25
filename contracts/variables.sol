@@ -22,6 +22,7 @@ contract myContract {
 
     string public myText;
 
+   // memory exist only during function exections means is temporary variable
     function setText (string memory _text) public {
          myText = _text;
     } 
