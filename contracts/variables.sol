@@ -47,7 +47,10 @@ contract myContract {
   // address datatype to store ethereum address wallet
    address public owner;
 
+// constructor is special function that runs once when contract is deployed
+// how it works: it runs when contract is deployed and initialize current address to the owner
    constructor () {
+    // msg.sender means the account address of someone who is deploying the account
      owner = msg.sender; // the onwer whom deploys the contract
    }
 
