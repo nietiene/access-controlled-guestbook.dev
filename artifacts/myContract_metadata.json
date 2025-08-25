@@ -7,6 +7,38 @@
 		"abi": [
 			{
 				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "Activate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "changeOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deActivate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getNumber",
 				"outputs": [
 					{
@@ -20,12 +52,51 @@
 			},
 			{
 				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getStatus",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getText",
 				"outputs": [
 					{
 						"internalType": "string",
 						"name": "",
 						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isActive",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -52,6 +123,19 @@
 						"internalType": "string",
 						"name": "",
 						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -112,11 +196,11 @@
 	},
 	"sources": {
 		"contracts/variables.sol": {
-			"keccak256": "0xdca0f01b95112217ca1b3d110d9a6fea7713a55d18f339ace43a97cb1e38e9df",
+			"keccak256": "0x5967c2f32aceda13b2ed00086169ee2dbd6d447c4b305612c1b02133be0b5cea",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f48659d98c78c9caa28b04410af8b07a2747c32ca194eec21786e8537e88e980",
-				"dweb:/ipfs/QmWBHAAsWdzg7yAB7Vd9KXjsgubttm2kAjahgxXmDXJPAh"
+				"bzz-raw://cd2400d870c09a5dd0567b6eb61ae4071d15c6172fc4d24ed7de41c52297dd38",
+				"dweb:/ipfs/QmdjyvkepBk8vN36CiwDDacWQcjrcMVWfF3KKxyE4R1TFr"
 			]
 		}
 	},

@@ -19,7 +19,6 @@ contract myContract {
     }
 
     //string
-
     string public myText;
 
    // memory exist only during function exections means is temporary variable
@@ -30,4 +29,35 @@ contract myContract {
     function getText () public view  returns (string memory) {
         return myText;
     }
+
+    //bool
+    bool public isActive;
+
+    function Activate () public {
+        isActive = true;
+    }
+    function deActivate () public {
+        isActive = false;
+    }
+
+    function getStatus () public view returns (bool) {
+       return  isActive;
+    }
+
+  // address datatype to store ethereum address wallet
+   address public owner;
+
+   constructor () {
+     owner = msg.sender; // the onwer whom deploys the contract
+   }
+
+   function changeOwner (address _newOwner) public {
+    require(msg.sender == owner, "Only owner allowed to change");
+    owner = _newOwner;
+   }
+
+   function getOwner () public  view  returns (address) {
+    return owner;
+   }
+
 }
