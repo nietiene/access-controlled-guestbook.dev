@@ -20,12 +20,38 @@
 			},
 			{
 				"inputs": [],
+				"name": "getText",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "myNumber",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myText",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -40,6 +66,19 @@
 					}
 				],
 				"name": "setNumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
+					}
+				],
+				"name": "setText",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -73,11 +112,11 @@
 	},
 	"sources": {
 		"contracts/variables.sol": {
-			"keccak256": "0xc3f2160be01c8901eef556a2fa3778a1afd12cb6a4f6c2372def9e6b6b1a8e3b",
+			"keccak256": "0xdca0f01b95112217ca1b3d110d9a6fea7713a55d18f339ace43a97cb1e38e9df",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6c33e520c840eb2ad05fe8c4d3a7824bd4d2a718d6c55f6f2ea178fd8296f462",
-				"dweb:/ipfs/QmNwnni4X57d6sH73sw4JMh3Gt4iMygmFor19zGdP1JCBg"
+				"bzz-raw://f48659d98c78c9caa28b04410af8b07a2747c32ca194eec21786e8537e88e980",
+				"dweb:/ipfs/QmWBHAAsWdzg7yAB7Vd9KXjsgubttm2kAjahgxXmDXJPAh"
 			]
 		}
 	},

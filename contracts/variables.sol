@@ -2,6 +2,7 @@
 pragma solidity ^0.8.28;
 
 contract myContract {
+    // uint
     uint public  myNumber;
 
     function setNumber (uint _num) public  {
@@ -15,5 +16,17 @@ contract myContract {
         // it means only read data from the contract
         // returns (uint) tells the compile what type of data type it will return
         return  myNumber;
+    }
+
+    //string
+
+    string public myText;
+
+    function setText (string memory _text) public {
+         myText = _text;
+    } 
+
+    function getText () public view  returns (string memory) {
+        return myText;
     }
 }

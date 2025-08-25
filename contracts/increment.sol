@@ -13,6 +13,7 @@ contract myCounter {
         count -= 1;
      }
 
+// initialize value to start with while we are counting 
      function setCount (uint _count) public {
         count = _count;
      }
