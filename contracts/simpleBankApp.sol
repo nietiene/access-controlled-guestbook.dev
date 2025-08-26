@@ -9,6 +9,7 @@ contract BankApp {
         balance  += amount;
     }
 
+// this function shows private actions 
     function doubleSecret () private view returns (uint) {
         return  secret * 2;
     } 
