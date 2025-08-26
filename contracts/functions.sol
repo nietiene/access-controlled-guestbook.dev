@@ -42,7 +42,7 @@ contract MyContract {
 
    // 4. external is called only from outside of the contract
    // it is aplied in calling external message like user wallet, another contract ..
-
+ // it is used in gas efficirent for large amount of input
    uint public num = 3;
 
    function setNumber(uint _num) external {
@@ -59,6 +59,15 @@ contract MyContract {
     return num;
    }
 
+// function modifiers it describes how function intract with the blockchain state
+// 1. view it is used to read state variables but can not modify them it is off-chain
+// applicaton: reading balances, metadata, status
+
+// 2. pure: only deals with function inputs or local variables no read of data or modify them
+
+function add(uint a, uint b) public pure returns (uint) {
+    return  a * b;
+}
 
 }
 

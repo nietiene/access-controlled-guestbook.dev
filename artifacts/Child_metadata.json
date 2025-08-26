@@ -9,6 +9,30 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "add",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "_num",
 						"type": "uint256"
 					}
@@ -151,11 +175,11 @@
 	},
 	"sources": {
 		"contracts/functions.sol": {
-			"keccak256": "0x3e1f6e2c0998993c8d7ad7c73bbb21a3f3ced0e15bc359f680cca690d6133433",
+			"keccak256": "0x11bcc702e4f2ee8e0cf7db9208d5757a5db60c57cbb4081d930c3f732db2d1b9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://860f4713f501a90686fa1ac0d068909d799264e562f87b85eba11a8408c305e5",
-				"dweb:/ipfs/QmTx7vx1z7n4MWwG472CB84aLnxZ3Cfi6gLJDk5FcqRqQ2"
+				"bzz-raw://3c650276dc42a1dbd25f3a9139c65685ecb3592ae6ae4a51b9dedd0f0a0984c2",
+				"dweb:/ipfs/QmSp7j1bCDettiH7sbckYdrR3oFdsAifnaktJHzp67US9v"
 			]
 		}
 	},
