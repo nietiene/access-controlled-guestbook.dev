@@ -29,6 +29,47 @@ contract MyContract {
    function revealPrivateNumber() public  view returns (uint) {
     return getSecretNumber();
    }
+
+
+   // 3. internal: similar to private but child contract can access it
+   // it is applied in token standard like ERC20, reusable base contract
+   // also in access control system 
+   uint internal parentNumer = 20;
+
+   function setParentNumber(uint _num) internal {
+    parentNumer = _num;
+   }
+
+   // 4. external is called only from outside of the contract
+   // it is aplied in calling external message like user wallet, another contract ..
+
+   uint public num = 3;
+
+   function setNumber(uint _num) external {
+    num = _num;
+   } 
+
+   function getNumber(uint _num) public {
+    // this refer to current address
+    // it helps to call external function 
+     this.setNumber(_num);
+   } 
+
+   function getnum() public view returns (uint) {
+    return num;
+   }
+
+
+}
+
+contract Child is MyContract {
+    function updateParentNum (uint _num) public {
+       setParentNumber(_num);
+    }
+
+    function getParentNum () public  view  returns (uint) {
+        return  parentNumer;
+    }
 }
 
 
