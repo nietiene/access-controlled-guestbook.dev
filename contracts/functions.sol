@@ -71,6 +71,7 @@ function add(uint a, uint b) public pure returns (uint) {
 
 }
 
+/// child contract
 contract Child is MyContract {
     function updateParentNum (uint _num) public {
        setParentNumber(_num);
