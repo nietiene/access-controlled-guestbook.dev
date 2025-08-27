@@ -24,4 +24,13 @@ contract ModifierExample {
          data = _data;
      }
 
+uint public balance;
+    modifier validateAmount {
+        require(balance > 0, "Amount must be greater than 0");
+        _;
+    } 
+
+    function deposit (uint _balance) public validateAmount {
+        // deposit logic
+    }
 } 
