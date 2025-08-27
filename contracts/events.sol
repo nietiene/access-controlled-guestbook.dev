@@ -31,3 +31,6 @@ function registerUser(string memory _name) public {
     emit UserRegistred(msg.sender, _name);
 }
 }
+
+
+// usercase: frontend and dApps, token transfer, NFTs, oracle or external services
