@@ -28,11 +28,59 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "_user",
 						"type": "address"
 					}
 				],
 				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "getBalances",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -52,6 +100,24 @@
 					}
 				],
 				"name": "setBalance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_balances",
+						"type": "uint256"
+					}
+				],
+				"name": "setBalances",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -85,11 +151,11 @@
 	},
 	"sources": {
 		"contracts/mapping.sol": {
-			"keccak256": "0x67e4b01ff3e646989c886ce4ba1126fc11aca15ebeb705fe3b59261f423a2bcc",
+			"keccak256": "0x71fb5fb249a10cf03f488922ac435215893d4cefdf9bb50d929afbec4ad28373",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c0387776cecb90589b973cd5cfca517557ca17fb8aaa305b8853e62c65dd55a4",
-				"dweb:/ipfs/QmbsqvwUptmNeraz66KwMYDwqUvTrebeooG5DccoeuVoYj"
+				"bzz-raw://fc6b7409f88a11377da8bb46958b9721273e1c8a4394d507db407dad3157cd45",
+				"dweb:/ipfs/QmXA7gvha1jtVR4X6jzpVy1VXzmKQeGHLxnPD8ZrdGYz1V"
 			]
 		}
 	},
