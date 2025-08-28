@@ -20,6 +20,7 @@ contract GuestBook {
 constructor () {
     owner = msg.sender;
 }
+
 modifier onlyOwner {
     require(msg.sender == owner, "Only owner allowed");
     _;
